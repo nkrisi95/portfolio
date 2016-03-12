@@ -1,0 +1,9 @@
+<h1>My Projects</h1>
+
+<% @projects.each do |project| %>
+  <div class="post">
+    <h3><%= link_to project.title, project %> |</a> <%= project.created_at.strftime('%A, %B, %d') %></h3>
+    <p><%= truncate(project.description, length: 80,) %></p>
+    <a href="<%= project.link %>" target="_blank">Visit <%= project.title %></a>
+  </div>
+<% end %>

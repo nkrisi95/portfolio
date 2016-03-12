@@ -2,7 +2,8 @@
 
 <% @posts.each do |post| %>
   <div class="post">
-    <h3><%= link_to post.title %></a></h3>
+    <h3><%= link_to post.title, post %></a></h3>
     <p><%= truncate(post.content, length: 80,) %></p>
+    <p><%= post.created_at.strftime('%A, %B, %d') %></p>
   </div>
 <% end %>
