@@ -7,3 +7,5 @@
     <p><%= post.created_at.strftime('%A, %B, %d') %></p>
   </div>
 <% end %>
+
+<%= will_paginate @posts %>
