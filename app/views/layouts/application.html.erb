@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Kristóf Nagy - Full Stack Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -9,16 +10,31 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><%= link_to "Contact", contact_index_path %></li>
-      <li><%= link_to "Posts", posts_path %></li>
-      <li><%= link_to "Projects", projects_path %></li>
-      <li><%= link_to "Home", root_path %></li>
-    </ul>
+  <nav class="navbar navbar-default navbar-centered fixed" role="navigation">
+      <ul class="nav navbar-nav">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Posts", posts_path %></li>
+        <li><%= link_to "Projects", projects_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+      </ul>
   </nav>
 
+  <% if notice %>
+  <p class="notice"><%= notice %></p>
+  <% elsif alert %>
+  <p class="alert"><%= alert %></p>
+  <% end %>
+
+  <div class="sign_out">
+    <% if user_signed_in? %>
+    <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+    <% end %>
+  </div>
+
+<div class="container">
 <%= yield %>
+</div>
+
 
 </body>
 </html>
