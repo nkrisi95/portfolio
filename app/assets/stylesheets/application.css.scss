@@ -143,20 +143,3 @@ hr {
 }
 
 //mobile css//
-@media only screen and (max-device-width : 1024px) {
-  .navbar-default {
-    height: 100px;
-  }
-  .navbar-nav {
-    display: inline-block;
-    width: 320px;
-  }
-
-  .container {
-    margin-bottom: 40%;
-  }
-
-  #welcome {
-    margin-top: 0;
-  }
-}
