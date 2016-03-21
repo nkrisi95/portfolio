@@ -101,6 +101,45 @@ body {
 
 hr {
   width: 10%;
+  border: solid 2px;
+}
+
+//projects and posts//
+.date {
+  font-size: 16px;
+}
+
+.container > div > h3 > a {
+  text-decoration: none;
+  color: #80ccff;
+}
+
+.container > div > h3 > a:hover {
+  color: #4da6ff;
+}
+
+.container > div > a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin-top: 10px;
+  -webkit-box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 25px 5px rgba(0,0,0,0.5);
+  transition-duration: 0s;
+  transition-timing-function: ease;
+  z-index: 1000;
+}
+
+.container > div > a:hover {
+  padding: 6px 16px;
+  -webkit-box-shadow: 6px 6px 25px 7px rgba(0,0,0,0.5);
+  -moz-box-shadow: 6px 6px 25px 7px rgba(0,0,0,0.5);
+  box-shadow: 6px 6px 25px 7px rgba(0,0,0,0.5);
+  transition-duration: 0s;
+  transition-timing-function: ease;
 }
 
 //mobile css//
@@ -111,10 +150,6 @@ hr {
   .navbar-nav {
     display: inline-block;
     width: 320px;
-  }
-
-  body {
-    background-position: right;
   }
 
   .container {
