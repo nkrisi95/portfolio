@@ -142,4 +142,34 @@ hr {
   transition-timing-function: ease;
 }
 
+#email {
+  color: #80ccff;
+}
+
 //mobile css//
+@media only screen and (max-device-width : 1024px) {
+  body {
+    background-image: url(http://www.developerdev.com/images/placeholders/1920x1200-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    color: #f2f2f2;
+  }
+
+  .navbar-default {
+    height: 100px;
+  }
+  .navbar-nav {
+    display: inline-block;
+    width: 320px;
+  }
+
+  .container {
+    margin-bottom: 40%;
+  }
+
+  #welcome {
+    margin-top: 0;
+  }
+}
