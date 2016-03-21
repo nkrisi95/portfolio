@@ -9,3 +9,9 @@
 <% end %>
 
 <%= will_paginate @posts %>
+
+<div class="sign_out">
+  <% if user_signed_in? %>
+  <li><%= link_to "New Project", new_project_path%></li>
+  <% end %>
+</div>

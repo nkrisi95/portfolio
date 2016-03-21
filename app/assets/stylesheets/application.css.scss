@@ -61,7 +61,7 @@ body {
   padding: 0;
 }
 
-//sign out button for me//
+//buttons for me//
 
 .sign_out {
   position: fixed;
@@ -148,7 +148,7 @@ hr {
 }
 
 //mobile css//
-@media only screen and (max-device-width : 1024px) {
+@media only screen and (max-device-width : 768px) {
   body {
     background-image: url(http://www.developerdev.com/images/placeholders/1920x1200-3.jpg);
     background-size: cover;
@@ -160,6 +160,7 @@ hr {
 
   .navbar-default {
     height: 100px;
+    text-align: center;
   }
 
   .navbar-nav {
