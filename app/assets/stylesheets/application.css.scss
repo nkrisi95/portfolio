@@ -9,6 +9,7 @@ body {
   background-attachment: fixed;
   background-position: right;
   color: #f2f2f2;
+  min-height: 480px;
 }
 
 .navbar-default {
@@ -160,6 +161,7 @@ hr {
   .navbar-default {
     height: 100px;
   }
+
   .navbar-nav {
     display: inline-block;
     width: 320px;
